@@ -1,0 +1,24 @@
+================================================================================
+INDIAN RAILWAYS SMART TRACK MAINTENANCE - UMS PROJECT METADATA
+================================================================================
+
+Project Title: Railway Track Defect Severity Classification
+Problem Statement ID: SIH-IR-TRACK-01
+Domain: Machine Learning / Industrial Predictive Maintenance & Rail Safety
+University / Institution: Academic Evaluation (UMS-Compliant)
+
+Group Members & Registration Numbers:
+1. Karthik Reddy (Reg. No: 21BCE1001) - Lead ML Engineer & Pipeline Architecture
+2. Ananya Sharma (Reg. No: 21BCE1045) - Data Modeling, Feature Engineering & Tuning
+3. Rahul Verma   (Reg. No: 21BCE1089) - Streamlit Dashboard, Telemetry & Documentation
+
+GitHub Repository Link:
+https://github.com/KarthikReddy9121/railway-track-defect-classification
+
+Live Deployed Project Link:
+https://railway-track-defect-classification.streamlit.app
+
+Champion Model: LightGBM Multiclass Classifier (Class-Weighted)
+Target Metric: Macro-Calibrated F1 Score (f1_macro >= 0.88)
+Safety Standard Reference: Indian Railways Permanent Way Manual (IRPWM 2020)
+================================================================================

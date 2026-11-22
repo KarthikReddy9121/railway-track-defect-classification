@@ -1,0 +1,201 @@
+{
+  "project_title": "Railway Track Defect Severity Classification",
+  "problem_statement_id": "SIH-IR-TRACK-01",
+  "training_timestamp": "2026-11-22 04:54:50Z",
+  "champion_model_name": "Random Forest (Balanced Subsample)",
+  "best_hyperparameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": "balanced_subsample",
+    "criterion": "gini",
+    "max_depth": 12,
+    "max_features": "sqrt",
+    "max_leaf_nodes": "None",
+    "max_samples": "None",
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 4,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": "None",
+    "n_estimators": 150,
+    "n_jobs": -1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "metrics": {
+    "test_macro_f1": 0.9609,
+    "test_weighted_f1": 0.9639,
+    "test_accuracy": 0.964,
+    "per_class": {
+      "Low": {
+        "precision": 0.9702048417132216,
+        "recall": 0.9867424242424242,
+        "f1-score": 0.9784037558685446,
+        "support": 528.0
+      },
+      "Moderate": {
+        "precision": 0.9448529411764706,
+        "recall": 0.9345454545454546,
+        "f1-score": 0.9396709323583181,
+        "support": 275.0
+      },
+      "High": {
+        "precision": 0.9642857142857143,
+        "recall": 0.9440559440559441,
+        "f1-score": 0.9540636042402827,
+        "support": 143.0
+      },
+      "Critical": {
+        "precision": 1.0,
+        "recall": 0.9444444444444444,
+        "f1-score": 0.9714285714285714,
+        "support": 54.0
+      },
+      "accuracy": 0.964,
+      "macro avg": {
+        "precision": 0.9698358742938517,
+        "recall": 0.9524470668220668,
+        "f1-score": 0.9608917159739292,
+        "support": 1000.0
+      },
+      "weighted avg": {
+        "precision": 0.9639955723909674,
+        "recall": 0.964,
+        "f1-score": 0.9638949277606323,
+        "support": 1000.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        521,
+        7,
+        0,
+        0
+      ],
+      [
+        16,
+        257,
+        2,
+        0
+      ],
+      [
+        0,
+        8,
+        135,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        51
+      ]
+    ]
+  },
+  "benchmark_comparison": [
+    {
+      "model_name": "Random Forest (Balanced Subsample)",
+      "cv_macro_f1_mean": 0.9500206118988229,
+      "cv_macro_f1_std": 0.007761137503374069,
+      "cv_weighted_f1_mean": 0.957099514325046,
+      "cv_accuracy_mean": 0.9575000000000001,
+      "training_time_sec": 2.17
+    },
+    {
+      "model_name": "XGBoost",
+      "cv_macro_f1_mean": 0.9493700967098804,
+      "cv_macro_f1_std": 0.009017887210378104,
+      "cv_weighted_f1_mean": 0.9563533635386602,
+      "cv_accuracy_mean": 0.9567500000000001,
+      "training_time_sec": 3.07
+    },
+    {
+      "model_name": "LightGBM (Class-Weighted)",
+      "cv_macro_f1_mean": 0.946596990673795,
+      "cv_macro_f1_std": 0.008278467939840349,
+      "cv_weighted_f1_mean": 0.9545937716153438,
+      "cv_accuracy_mean": 0.9550000000000001,
+      "training_time_sec": 2.16
+    },
+    {
+      "model_name": "Logistic Regression (Class-Weighted)",
+      "cv_macro_f1_mean": 0.9355872296259029,
+      "cv_macro_f1_std": 0.01001680829570027,
+      "cv_weighted_f1_mean": 0.9498293896540302,
+      "cv_accuracy_mean": 0.9502499999999999,
+      "training_time_sec": 0.58
+    }
+  ],
+  "dataset_statistics": {
+    "total_samples": 5000,
+    "train_samples": 4000,
+    "test_samples": 1000,
+    "class_distribution_overall": {
+      "0": 2642,
+      "1": 1376,
+      "2": 713,
+      "3": 269
+    }
+  },
+  "feature_schema": {
+    "raw_numerical_features": [
+      "track_km_post",
+      "traffic_density_gmt",
+      "gauge_deviation_mm",
+      "alignment_error_mm",
+      "twist_mm_per_m",
+      "unevenness_mm",
+      "ultrasonic_flaw_depth_mm",
+      "axle_box_accel_g",
+      "rail_temp_celsius",
+      "rainfall_7d_mm",
+      "days_since_last_tamping"
+    ],
+    "raw_categorical_features": [
+      "zone_division",
+      "rail_section_type",
+      "sleeper_type"
+    ],
+    "engineered_features": [
+      "track_quality_index",
+      "thermal_stress_index",
+      "structural_risk_ratio",
+      "vibration_dynamic_load",
+      "ballast_degradation_factor"
+    ],
+    "transformed_feature_names": [
+      "track_km_post",
+      "traffic_density_gmt",
+      "gauge_deviation_mm",
+      "alignment_error_mm",
+      "twist_mm_per_m",
+      "unevenness_mm",
+      "ultrasonic_flaw_depth_mm",
+      "axle_box_accel_g",
+      "rail_temp_celsius",
+      "rainfall_7d_mm",
+      "days_since_last_tamping",
+      "track_quality_index",
+      "thermal_stress_index",
+      "structural_risk_ratio",
+      "vibration_dynamic_load",
+      "ballast_degradation_factor",
+      "zone_division_CR-BB",
+      "zone_division_ECoR-KUR",
+      "zone_division_ER-HWH",
+      "zone_division_NCR-PRYJ",
+      "zone_division_NR-UMB",
+      "zone_division_SCR-SC",
+      "zone_division_SR-MAS",
+      "zone_division_WR-BCT",
+      "rail_section_type_52kg",
+      "rail_section_type_60kg UIC",
+      "sleeper_type_PSC",
+      "sleeper_type_Steel",
+      "sleeper_type_Wooden"
+    ],
+    "total_input_dimension": 29
+  }
+}
