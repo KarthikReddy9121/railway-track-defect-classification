@@ -50,7 +50,7 @@ from src.feature_engineering import DomainFeatureEngineer
 # Streamlit Page Configuration
 # ---------------------------------------------------------------------------
 st.set_page_config(
-    page_title="Indian Railways Track Defect Classifier | SIH-IR-TRACK-01",
+    page_title="Indian Railways Track Defect Severity Classifier",
     page_icon="🚆",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -166,7 +166,7 @@ if "audit_log" not in st.session_state:
 st.markdown("""
 <div class="main-header">
     <h1>🚆 Indian Railways — Predictive Track Defect Severity Classification</h1>
-    <p>Smart India Hackathon Adaptation (SIH-IR-TRACK-01) | Permanent Way (P-Way) Safety & Maintenance Dispatch Engine</p>
+    <p>Predictive Track Maintenance & Permanent Way (P-Way) Safety Dispatch Engine</p>
 </div>
 """, unsafe_allow_html=True)
 

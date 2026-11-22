@@ -1,15 +1,15 @@
 # 🚆 PRESENTATION SLIDES STRUCTURE & SPEAKER NOTES (10 SLIDES)
 **Project Title:** Railway Track Defect Severity Classification  
-**Problem Statement ID:** SIH-IR-TRACK-01 (Smart India Hackathon / Indian Railways Track Safety Adaptation)  
+**Topic:** Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization  
 **Evaluated Team Members:** Karthik Reddy (21BCE1001), Ananya Sharma (21BCE1045), Rahul Verma (21BCE1089)
 
 ---
 
 ## Slide 1: Title & Team Introduction (Mapped to Report Section 1)
 - **Slide Title:** Railway Track Defect Severity Classification
-- **Subtitle:** Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization (SIH-IR-TRACK-01)
+- **Subtitle:** Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization
 - **Visuals / Layout:**
-  - Indian Railways official crest & Smart India Hackathon badge.
+  - Indian Railways official crest & Track Safety Engineering badge.
   - Team Member cards:
     - **Karthik Reddy (21BCE1001)** — Lead ML Pipeline Architect
     - **Ananya Sharma (21BCE1045)** — Feature Engineering & Tuning Specialist

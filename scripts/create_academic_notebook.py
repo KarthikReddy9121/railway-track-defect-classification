@@ -33,13 +33,11 @@ cells = []
 # Cell 1: Title & University Metadata
 # ==============================================================================
 cells.append(nbf.v4.new_markdown_cell("""# 🚆 Railway Track Defect Severity Classification
-## Smart India Hackathon Adaptation: SIH-IR-TRACK-01
-### Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization
+## Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization
 
 ---
 
 **Project Metadata & Academic Details:**
-- **Problem Statement ID:** SIH-IR-TRACK-01 (Indian Railways Track Maintenance Theme)
 - **Domain:** Supervised Machine Learning / Predictive Maintenance & Rail Safety Engineering
 - **Target Severity Tiers:** 
   - `0: Low` (Permissible Geometry, Routine Monitoring)

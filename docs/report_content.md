@@ -1,5 +1,4 @@
 # 🚆 ACADEMIC PROJECT REPORT: RAILWAY TRACK DEFECT SEVERITY CLASSIFICATION
-**Smart India Hackathon Theme Adaptation (Problem Statement ID: SIH-IR-TRACK-01)**  
 *Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization*
 
 ---

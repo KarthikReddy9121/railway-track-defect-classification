@@ -52,7 +52,7 @@ class NumberedCanvas(canvas.Canvas):
         
         # Header (pages > 1)
         if self._pageNumber > 1:
-            self.drawString(54, 750, "Indian Railways Track Defect Classification | SIH-IR-TRACK-01")
+            self.drawString(54, 750, "Indian Railways Track Defect Severity Classification")
             self.setStrokeColor(colors.HexColor("#cccccc"))
             self.setLineWidth(0.5)
             self.line(54, 745, 558, 745)
@@ -143,8 +143,6 @@ def generate_pdf(output_path: str):
     story.append(Paragraph("🚆 RAILWAY TRACK DEFECT SEVERITY CLASSIFICATION", title_style))
     story.append(Spacer(1, 10))
     story.append(Paragraph("Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization", subtitle_style))
-    story.append(Spacer(1, 8))
-    story.append(Paragraph("<b>Smart India Hackathon Adaptation: SIH-IR-TRACK-01</b>", subtitle_style))
     story.append(Spacer(1, 30))
 
     # Student metadata table
@@ -348,7 +346,7 @@ def generate_pptx(output_path: str):
         {
             "num": 1,
             "title": "Railway Track Defect Severity Classification",
-            "subtitle": "Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Prioritization\nSmart India Hackathon Adaptation: SIH-IR-TRACK-01",
+            "subtitle": "Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization",
             "bullets": [
                 "Lead ML Pipeline Architect: Karthik Reddy (Reg. No: 21BCE1001)",
                 "Data Modeling & Feature Engineering: Ananya Sharma (Reg. No: 21BCE1045)",

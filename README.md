@@ -1,5 +1,4 @@
 # 🚆 Railway Track Defect Severity Classification
-**Smart India Hackathon Adaptation (Problem Statement ID: SIH-IR-TRACK-01)**  
 *Predictive Permanent Way (P-Way) Track Maintenance & Multi-Class Defect Severity Prioritization*
 
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B%20%7C%203.13-blue.svg)](https://www.python.org/)
