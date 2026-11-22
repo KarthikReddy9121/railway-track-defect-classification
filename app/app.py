@@ -534,22 +534,22 @@ with tab3:
     with plot_tabs[0]:
         cm_path = plots_dir / "confusion_matrix.png"
         if cm_path.exists():
-            st.image(str(cm_path), caption="Raw Count & Normalized Recall Confusion Matrix (Test Partition)", use_container_width=True)
+            st.image(str(cm_path), caption="Raw Count & Normalized Recall Confusion Matrix (Test Partition)", width="stretch")
 
     with plot_tabs[1]:
         pcm_path = plots_dir / "per_class_metrics.png"
         if pcm_path.exists():
-            st.image(str(pcm_path), caption="Precision, Recall, and F1-Score Across Severity Levels", use_container_width=True)
+            st.image(str(pcm_path), caption="Precision, Recall, and F1-Score Across Severity Levels", width="stretch")
 
     with plot_tabs[2]:
         roc_path = plots_dir / "roc_pr_curves.png"
         if roc_path.exists():
-            st.image(str(roc_path), caption="Multiclass One-vs-Rest ROC & Precision-Recall Curves", use_container_width=True)
+            st.image(str(roc_path), caption="Multiclass One-vs-Rest ROC & Precision-Recall Curves", width="stretch")
 
     with plot_tabs[3]:
         shap_path = plots_dir / "shap_summary.png"
         if shap_path.exists():
-            st.image(str(shap_path), caption="SHAP Global Importance Explaining Critical Defect Predictions", use_container_width=True)
+            st.image(str(shap_path), caption="SHAP Global Importance Explaining Critical Defect Predictions", width="stretch")
             st.markdown("""
             **Interpretability Takeaways:**
             - **Ultrasonic Flaw Depth (`ultrasonic_flaw_depth_mm`)**: Dominant driver for Critical and High severity predictions. Defect depths > 18mm trigger immediate removal.
@@ -560,7 +560,7 @@ with tab3:
     with plot_tabs[4]:
         pd_path = plots_dir / "priority_distribution.png"
         if pd_path.exists():
-            st.image(str(pd_path), caption="Operational Maintenance Priority Score Distribution by Severity Tier", use_container_width=True)
+            st.image(str(pd_path), caption="Operational Maintenance Priority Score Distribution by Severity Tier", width="stretch")
 
 
 # ===========================================================================
